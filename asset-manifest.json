@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/justai-test/static/css/main.f984b036.chunk.css",
+    "main.js": "/justai-test/static/js/main.cce31f75.chunk.js",
+    "main.js.map": "/justai-test/static/js/main.cce31f75.chunk.js.map",
+    "runtime-main.js": "/justai-test/static/js/runtime-main.05814e73.js",
+    "runtime-main.js.map": "/justai-test/static/js/runtime-main.05814e73.js.map",
+    "static/js/2.b1740cee.chunk.js": "/justai-test/static/js/2.b1740cee.chunk.js",
+    "static/js/2.b1740cee.chunk.js.map": "/justai-test/static/js/2.b1740cee.chunk.js.map",
+    "index.html": "/justai-test/index.html",
+    "static/css/main.f984b036.chunk.css.map": "/justai-test/static/css/main.f984b036.chunk.css.map",
+    "static/js/2.b1740cee.chunk.js.LICENSE.txt": "/justai-test/static/js/2.b1740cee.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/justai-test/static/media/Comfortaa-SemiBold.27c17c7d.ttf",
+    "static/media/trash.4664d724.svg": "/justai-test/static/media/trash.4664d724.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.05814e73.js",
+    "static/js/2.b1740cee.chunk.js",
+    "static/css/main.f984b036.chunk.css",
+    "static/js/main.cce31f75.chunk.js"
+  ]
+}
