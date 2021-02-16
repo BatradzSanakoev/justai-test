@@ -1,0 +1,11 @@
+.main__search-input {
+    width: 82%;
+    min-height: 30px;
+    border: 2px solid steelblue;
+    border-radius: 20px;
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+    color: steelblue;
+    margin-top: 10px;
+}

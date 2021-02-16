@@ -1,0 +1,77 @@
+.main__search-input:focus {
+    border: 3px solid steelblue;
+}
+
+.main__search-list {
+    width: 50%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main__search-list-users {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    height: 50vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.main__search-list-users::-webkit-scrollbar {
+    width: 0;
+}
+
+.main__search-list-user-type {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all .5s linear;
+}
+
+.main__search-list-user-type_disabled {
+    display: none;
+}
+
+.main__search-list-user-type-head {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid steelblue;
+    background-color: steelblue;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: all .3s linear;
+}
+
+.main__search-list-user-type-head:hover {
+    cursor: pointer;
+    opacity: .9;
+    transition: all .3s linear;
+}
+
+.main__search-list-type-users {
+    width: 85%;
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s linear;
+    list-style: none;
+}
+
+.main__search-list-type-users_close {
+    visibility: hidden;
+    transform: translateY(-20px);
+    height: 0;
+    opacity: 0;
+    transition: all .2s linear;
+}

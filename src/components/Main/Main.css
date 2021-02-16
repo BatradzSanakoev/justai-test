@@ -1,0 +1,30 @@
+.main {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main__head {
+    color: steelblue;
+    margin-top: 20px;
+}
+
+.main__container {
+    width: 90%;
+    height: 63vh;
+    border: 1px solid steelblue;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main__hr {
+    width: 1px;
+    height: 400px;
+    background-color: steelblue;
+}
