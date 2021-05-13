@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './App.css';
+import DataContext from '../../context/DataContext';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Main from '../Main/Main';
@@ -18,6 +19,9 @@ function App() {
   const [isLoading, setIsLoading] = React.useState(false);
   const [isLoadError, setIsLoadError] = React.useState(false);
 
+
+  const [dataContext, setDataContext] = React.useState([]);
+
   // Загрузка данных с сервера
   React.useEffect(() => {
     setIsLoaded(false);
@@ -30,8 +34,9 @@ function App() {
         users.map(user => {
           user.name = user.name.first + ' ' + user.name.last;
         });
+        setDataContext(utils.fillUsersCategories(users));
         setSortUsers(utils.fillUsersCategories(users));
-        setUsersClone(utils.fillUsersCategories(users));
+        // setUsersClone(utils.fillUsersCategories(users));
       })
       .catch(err => {
         console.log(err);
@@ -45,11 +50,12 @@ function App() {
 
   // Метод поиска пользователей в отсортированном списке
   const userSearch = value => {
-    setSortUsers(usersClone);
+    // setSortUsers(usersClone);
+    setSortUsers(dataContext);
 
     let tempArr = new Array();
 
-    Object.values(usersClone).map(items => {
+    Object.values(dataContext).map(items => {
       Object.values(items).map(item => {
         tempArr.push(item);
       });
@@ -69,18 +75,20 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Main
-        sortUsers={sortUsers}
-        isLoaded={isLoaded}
-        userSearch={userSearch}
-        searchResults={searchResults}
-        handleFavourite={handleFavourite}
-        favourite={favourite}
-        isLoadError={isLoadError}
-        isLoading={isLoading}
-      />
-      <Footer />
+      <DataContext.Provider value={dataContext}>
+        <Header />
+        <Main
+          sortUsers={sortUsers}
+          isLoaded={isLoaded}
+          userSearch={userSearch}
+          searchResults={searchResults}
+          handleFavourite={handleFavourite}
+          favourite={favourite}
+          isLoadError={isLoadError}
+          isLoading={isLoading}
+        />
+        <Footer />
+      </DataContext.Provider>
     </div>
   );
 }

@@ -14,7 +14,7 @@ export default function SearchForm({ userSearch }) {
 
     return (
         <>
-            <input type='text' name='input' value={text || ''} placeholder='Search field' className='main__search-input' onChange={handleChange} />
+            <input type='text' name='input' value={text || ''} placeholder='Search field (enter name with lower case)' className='main__search-input' onChange={handleChange} />
         </>
     )
 }

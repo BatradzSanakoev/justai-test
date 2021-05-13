@@ -1,4 +1,4 @@
-const BASE_URL = 'https://randomuser.me/api/?results=1000';
+const BASE_URL = 'https://randomuser.me/api/?results=5000';
 
 const getUsers = () => {
     return fetch(`${BASE_URL}`, {
