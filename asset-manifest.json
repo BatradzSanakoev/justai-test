@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/justai-test/static/css/main.f984b036.chunk.css",
-    "main.js": "/justai-test/static/js/main.cce31f75.chunk.js",
-    "main.js.map": "/justai-test/static/js/main.cce31f75.chunk.js.map",
+    "main.js": "/justai-test/static/js/main.454fe921.chunk.js",
+    "main.js.map": "/justai-test/static/js/main.454fe921.chunk.js.map",
     "runtime-main.js": "/justai-test/static/js/runtime-main.05814e73.js",
     "runtime-main.js.map": "/justai-test/static/js/runtime-main.05814e73.js.map",
     "static/js/2.b1740cee.chunk.js": "/justai-test/static/js/2.b1740cee.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.05814e73.js",
     "static/js/2.b1740cee.chunk.js",
     "static/css/main.f984b036.chunk.css",
-    "static/js/main.cce31f75.chunk.js"
+    "static/js/main.454fe921.chunk.js"
   ]
 }
