@@ -4,15 +4,7 @@ import SearchList from '../SearchList/SearchList';
 import Favourites from '../Favourites/Favourites';
 import Preloader from '../Preloader/Preloader';
 
-// import DataContext from '../../context/DataContext';
-
 export default function Main({ sortUsers, isLoaded, userSearch, searchResults, handleFavourite, favourite, isLoadError, isLoading }) {
-
-    // const dataContext = React.useContext(DataContext);
-    // React.useEffect(() => {
-    //     dataContext && console.log(dataContext);
-    // }, []);
-
     return (
         <main className='main'>
             <h2 className='main__head'>Users List</h2>

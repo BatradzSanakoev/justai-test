@@ -13,7 +13,7 @@ export default function SearchList({ sortUsers, isLoaded, userSearch, searchResu
     return (
         <div className='main__search-list'>
             <h3 className='main__search-list-head'>Search user</h3>
-            <SearchForm userSearch={userSearch} searchResults={searchResults} sortUsers={sortUsers} />
+            <SearchForm userSearch={userSearch} />
             <div className='main__search-list-users'>
 
                 {/*  
